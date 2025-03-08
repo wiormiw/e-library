@@ -2,10 +2,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'App',
+  name: 'AppCard',
 })
 </script>
 
 <template>
-  <router-view />
+  <div class="bg-white shadow-md rounded-lg p-6">
+    <slot />
+  </div>
 </template>
